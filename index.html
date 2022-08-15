@@ -1,0 +1,713 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamify</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="shortcut icon" href="./SVG/icon.svg" type="image/x-icon" />
+  </head>
+  <body
+    class="
+      max-w-[2000px]
+      mx-auto
+      text-neutral-900
+      dark:text-neutral-200
+      bg-white
+      dark:bg-neutral-800
+    "
+  >
+    <nav class="mx-auto p-4 bg-amber-400">
+      <div class="container mx-auto flex items-center justify-between">
+        <a
+          href="/"
+          class="
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4 ring-offset-amber-400
+            lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-9
+            z-50
+            hover:opacity-75
+            transition-colors
+          "
+          aria-label="Go to homepage"
+        >
+          <img
+            src="./SVG/Artboard 1.svg"
+            class="w-48 md:w-48 lg:w-72"
+            alt="Home Smart Logo"
+          />
+        </a>
+
+        <button
+          id="menu"
+          class="
+            lg:hidden
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4 ring-offset-amber-400
+            text-neutral-900
+            hover:text-neutral-600
+            transition-colors
+          "
+          aria-expanded="false"
+          aria-label="Open Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-with="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div
+          role="menubar"
+          class="
+            hidden
+            lg:flex
+            flex-col
+            gap-4
+            absolute
+            z-40
+            right-0
+            left-0
+            top-16
+            bg-amber-400
+            text-center text-lg
+            p-6
+            items-center
+            lg:flex-row lg:static lg:justify-between lg:w-full
+          "
+        >
+          <a
+            href="/"
+            class="
+              py-1
+              px-6
+              dark:text-neutral-900
+              focus:outline-none
+              focus-visible:ring-4
+              ring-neutral-900
+              rounded-sm
+              ring-offset-4 ring-offset-amber-400
+              hover:text-neutral-600
+              transition-colors
+            "
+            role="menuitem"
+            >Home</a
+          >
+          <a
+            href="/"
+            class="
+              py-1
+              px-6
+              lg:mr-auto
+              dark:text-neutral-900
+              focus:outline-none
+              focus-visible:ring-4
+              ring-neutral-900
+              rounded-sm
+              ring-offset-4 ring-offset-amber-400
+              hover:text-neutral-600
+              transition-colors
+            "
+            role="menuitem"
+            >Contact</a
+          >
+          <a
+            href="/"
+            class="
+              py-1
+              px-6
+              dark:text-neutral-900
+              focus:outline-none
+              focus-visible:ring-4
+              ring-neutral-900
+              rounded-sm
+              ring-offset-4 ring-offset-amber-400
+              hover:text-neutral-600
+              transition-colors
+            "
+            role="menuitem"
+            >Login</a
+          >
+          <a
+            href="/"
+            class="
+              py-2
+              px-6
+              bg-teal-900
+              text-white
+              shadow-xl
+              hover:shadow-none
+              transition-shadow
+              focus:outline-none
+              focus-visible:ring-4
+              ring-neutral-900
+              rounded-md
+              ring-offset-4 ring-offset-amber-400
+              hover:text-neutral-400
+            "
+            role="menuitem"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="relative pt-16 md:pt-[-500px] lg:pt-48">
+      <div
+        class="
+          absolute
+          inset-0
+          bottom-8
+          md:bottom-24
+          lg:bottom-64
+          xl:bottom-32
+          -z-10
+          bg-gradient-to-b
+          from-amber-400
+          to-amber-600
+        "
+      ></div>
+      <div
+        class="
+          container
+          mx-auto
+          lg:-mt-64
+          grid grid-rows-1
+          place-items-end
+          px-2
+        "
+      >
+        <img
+          src="./images/img_1.png"
+          class="row-start-1 row-end-2 col-start-1 col-end-1 mx-auto"
+          alt=""
+        />
+        <img
+          src="./images/img_2.png"
+          class="row-start-1 row-end-2 col-start-1 col-end-1 mx-auto mt-12"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <main
+      class="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden"
+    >
+      <a
+        href="#"
+        class="
+          py-2
+          px-6
+          bg-amber-400
+          dark:text-neutral-900
+          mx-auto
+          my-12
+          flex
+          gap-2
+          shadow-xl
+          hover:shadow-none
+          transition-shadow
+          focus:outline-none
+          focus-visible:ring-4
+          ring-neutral-900
+          rounded-md
+          ring-offset-4 ring-offset-white
+          dark:ring-amber-400
+          hover:text-neutral-600
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+          />
+        </svg>
+
+        <span>Download the Game</span>
+      </a>
+
+      <section class="relative" aria-labelledby="qualities">
+        <img
+          src="./images/dots.svg"
+          class="
+            hidden
+            lg:block
+            absolute
+            top-1/2
+            -translate-y-1/2
+            -left-24
+            xl:left-7
+          "
+          alt=""
+        />
+        <img
+          src="./images/dots.svg"
+          class="
+            hidden
+            lg:block
+            absolute
+            top-1/2
+            -translate-y-1/2
+            -right-24
+            xl:right-7
+          "
+          alt=""
+        />
+        <h2 id="qualities" class="sr-only">Our Qualities</h2>
+        <div
+          class="
+            container
+            mx-auto
+            md:-mt-[80px]
+            max-w-5xl
+            flex
+            gap-12
+            flex-wrap
+            items-start
+            justify-center
+            md:justify-between
+          "
+        >
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Secure</h3>
+            <p>Games are optimized properly to avoid hackers.</p>
+          </div>
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Efficient</h3>
+            <p>Games are built with best practices to ensure optimization on any hardware.</p>
+          </div>
+          <div class="grid gap-4 justify-items-center text-center md:flex-1">
+            <div class="rounded-full border-8 border-amber-400 p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold">Proven</h3>
+            <p>Leading the mobile gaming world for 7+ years.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="partners" class="text-center grid gap-8 place-">
+        <div class="grid gap-4">
+          <h2 id="partners" class="text-4xl font-bold text-amber-400">
+            Our Partners
+          </h2>
+          <p class="w-full mx-auto max-w-lg">
+            We've partnered with hundreds of Game testers, developers and end
+            users to help create a visually appealing and engrossing game that
+            keeps you hooked.
+          </p>
+        </div>
+
+        <div
+          class="
+            flex flex-wrap
+            justify-center
+            gap-8
+            md:gap-x-16
+            max-w-2xl
+            mx-auto
+          "
+        >
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner1.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner2.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner3.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner4.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner5.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner6.svg" class="h-16 w-16" alt="" />
+          </div>
+          <div
+            class="
+              p-4
+              bg-white
+              dark:bg-neutral-600
+              shadow-md
+              dark:shadow-xl
+              rounded-md
+            "
+          >
+            <img src="./images/partner7.svg" class="h-16 w-16" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="home" class="relative">
+        <div class="flex flex-wrap-reverse gap-8 justify-center">
+          <div
+            class="flex gap-6 flex-wrap flex-col items-start lg:justify-center"
+          >
+            <div class="flex flex-wrap flex-col ites-start gap-2">
+              <h2 class="text-4xl font-bold max-w-md">
+                Relax, you're about to sign up for a great experience!
+              </h2>
+              <p class="max-w-md">
+                Our in-Game experience is top notch and unparalleled in quality,
+                we've got great customer support in case you need help with
+                setup or whatever :)
+              </p>
+            </div>
+            <a
+              href="#"
+              class="
+                py-2
+                px-6
+                bg-amber-400
+                dark:text-neutral-900
+                flex
+                gap-2
+                shadow-xl
+                hover:shadow-none
+                transition-shadow
+                focus:outline-none
+                focus-visible:ring-4
+                ring-neutral-900
+                rounded-md
+                ring-offset-4 ring-offset-white
+                dark:ring-amber-400
+                hover:text-neutral-600
+              "
+            >
+              Sign Up
+            </a>
+          </div>
+          <!-- Replace this with image of a gamer or some thing like that -->
+          <img src="./images/Untitled design (4).png" alt="Table" />
+        </div>
+        <div
+          class="
+            absolute
+            -bottom-6
+            -z-10
+            -right-32
+            aspect-square
+            md:border-8
+            border-amber-400
+            md:w-64
+            rounded-full
+            lg:w-96
+            xl:max-w-lg
+          "
+        ></div>
+        <div
+          class="
+            bg-teal-900
+            h-24
+            -mx-8
+            mt-12
+            xl:h-48 xl:mt-0 xl:absolute
+            w-screen
+            -bottom-8
+            -z-10
+          "
+        ></div>
+      </section>
+
+      <section
+        aria-labelledby="contact"
+        class="container mx-auto px-8 overflow-hidden"
+      >
+        <div class="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20">
+          <div class="md:flex-1 md:max-w-sm relative">
+            <img src="./images/lamp.png" alt="lamp" class="mx-auto" />
+            <a
+              href="#"
+              class="
+                py-2
+                px-6
+                bg-amber-400
+                dark:text-neutral-900
+                w-max
+                mx-auto
+                mt-12
+                md:mb-12
+                flex
+                gap-2
+                shadow-xl
+                hover:shadow-none
+                transition-shadow
+                focus:outline-none
+                focus-visible:ring-4
+                ring-neutral-900
+                rounded-md
+                ring-offset-4 ring-offset-white
+                dark:ring-amber-400
+                hover:text-neutral-600
+              "
+            >
+              Download the App
+            </a>
+            <div
+          class="
+            absolute
+            -bottom-6
+            -z-10
+            -right-32
+            aspect-square
+            md:border-8
+            border-amber-400
+            md:w-64
+            rounded-full
+            lg:w-96
+            xl:max-w-lg
+          "
+        ></div>
+            <!-- <img src="./images/app.svg" width="240" class="hidden md:block drop-shadow-xl" alt=""> -->
+          </div>
+
+          <form
+            class="
+              relative
+              border-8 border-neutral-900
+              p-6
+              rounded-lg
+              gap-8
+              grid
+              md:flex-1 md:max-w-lg
+              my-4
+              md:my-12
+              lg:my-16
+              bg-white
+              dark:bg-neutral-800
+              w-full
+            "
+          >
+            <h2 id="contact" class="text-3xl font-bold">Let's Connect</h2>
+            <div class="relative">
+              <input
+                type="text"
+                id="name"
+                class="
+                  w-full
+                  peer
+                  border-4 border-amber-400
+                  dark:focus:ring-offset-2
+                  focus:border-amber-400 focus:outline-none
+                  dark:bg-amber-400 dark:text-neutral-900
+                 
+                "
+                placeholder="Your name"
+              />
+              <label
+                for="name"
+                class="
+                  text-neutral-500 text-sm
+                  font-bold
+                  uppercase
+                  absolute
+                  -top-4
+                  left-2
+                  -translate-y-1/2
+                  transition-all
+                "
+                >Your Name</label
+              >
+            </div>
+
+            <div class="relative">
+              <input
+                type="text"
+                id="email"
+                class="
+                  w-full
+                  peer
+                  border-4 border-amber-400
+                  dark:focus:ring-offset-2
+                  focus:border-amber-400 focus:outline-none
+                  dark:bg-amber-400 dark:text-neutral-900
+                  
+                "
+                placeholder="example@gmail.com"
+              />
+              <label
+                for="name"
+                class="
+                  text-neutral-500 text-sm
+                  font-bold
+                  uppercase
+                  absolute
+                  -top-4
+                  left-2
+                  -translate-y-1/2
+                  transition-all
+                "
+                >Your Email</label
+              >
+            </div>
+            <div class="relative">
+              <label for="content" class=" text-neutral-500 text-sm
+              font-bold
+              uppercase
+              absolute
+              -top-4
+              left-2
+              -translate-y-1/2
+              transition-all">How can we help?</label>
+              <textarea name="content" id="content" cols="20" placeholder="Enter your messsage" rows="5" class="     w-full
+              peer
+              form-textarea
+              resize-none
+              border-4 border-amber-400
+              dark:focus:ring-offset-2
+              focus:border-amber-400 focus:outline-none
+              dark:bg-amber-400 dark:text-neutral-900"></textarea>
+            </div>
+            <a
+            href="/"
+            class="
+              py-2
+              px-6
+              bg-neutral-900
+              w-max
+              text-white
+              shadow-xl
+              hover:shadow-none
+              transition-shadow
+              focus:outline-none
+              focus-visible:ring-4
+              ring-neutral-900
+              rounded-md
+              ring-offset-4
+               ring-offset-white
+               dark:ring-offset-amber-400
+              hover:text-neutral-400
+            "
+            role="menuitem"
+            >Sign Up</a
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
